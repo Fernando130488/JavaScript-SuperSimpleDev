@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercises 10</title>
+  <link rel="stylesheet" href="10-Exer-style.css">
+</head>
+<body>
+  <!--10a------------------------------------------------------------------------>
+  
+  <h1>10a______________________________________________</h1>
+  <button class="amazon-Button">Add to Cart</button>
+
+  <!--10b------------------------------------------------------------------------>
+
+  <br><br><br><br>
+
+  <h1>10b______________________________________________</h1>
+  <button class="uber-Request-Button">Request now</button>
+  <button class="uber-Schedule-Button">Schedule for later</button>
+
+  <!--10c------------------------------------------------------------------------>
+
+  <br><br><br><br>
+
+  <h1>10c______________________________________________</h1>
+  <button class="js-Button">Test</button>
+
+  <!--10defg--------------------------------------------------------------------->
+
+  <br><br><br><br>
+
+  <h1>10defg___________________________________________</h1>
+  <button class="gaming-Button" onclick="
+    onoff ('gaming', 'music', 'tech');
+    
+  ">Gaming</button>
+
+  <button class="music-Button" onclick="
+    onoff ('music', 'gaming', 'tech');
+
+  ">Music</button>
+
+  <button class="tech-Button" onclick="
+    onoff ('tech', 'gaming', 'music');
+
+  ">Tech</button>
+
+  <!--10h--------------------------------------------------------------------->
+  <br><br><br><br>
+
+  <h1>10h______________________________________________</h1>
+  <p class="title_Shipping">Amazon Shipping Calculator</p>
+  <input placeholder="Cost of order" class="js-cost-input cost-input" onkeydown="
+      handleCostKeydown(event);
+    ">
+    <button onclick="
+      calculateTotal();
+  " class="calculate-button">Calculate</button>
+  <p class="error">ERROR: cost cannot be less than $0</p>
+  <p class="js-total-cost"></p>
+
+  <!--10i--------------------------------------------------------------------->
+  <br><br><br><br>
+
+  <h1>10h______________________________________________</h1>
+  <div class="calculator">
+    <p class="display"></p>
+
+    <div class="buttons">
+      <p>
+        <button class='number-button' onclick="
+          updateCalculation ('1');
+        ">1</button>
+    
+        <button class='number-button' onclick="
+          updateCalculation ('2');
+        ">2</button>
+    
+        <button class='number-button' onclick="
+          updateCalculation ('3');
+        ">3</button>
+    
+        <button class='simbol-button' onclick="
+          updateCalculation ('+');
+        ">+</button>
+      </p>
+    
+      <p>
+        <button class='number-button' onclick="
+          updateCalculation ('4');
+        ">4</button>
+    
+        <button class='number-button' onclick="
+          updateCalculation ('5');
+        ">5</button>
+    
+        <button class='number-button' onclick="
+          updateCalculation ('6');
+        ">6</button>
+    
+        <button class='simbol-button' onclick="
+          updateCalculation ('-');
+        ">-</button>
+      </p>
+    
+      <p>
+        <button class='number-button' onclick="
+          updateCalculation ('7');
+        ">7</button>
+    
+        <button class='number-button' onclick="
+          updateCalculation ('8');
+        ">8</button>
+    
+        <button class='number-button' onclick="
+          updateCalculation ('9');
+        ">9</button>
+    
+        <button class='simbol-button' onclick="
+          updateCalculation ('*');
+        ">*</button>
+      </p>
+    
+      <p>
+        <button class='number-button' onclick="
+          updateCalculation ('0');
+        ">0</button>
+    
+        <button class='simbol-button' onclick="
+          updateCalculation ('.');
+        ">.</button>
+    
+        <button class='simbol-button' onclick="
+          updateCalculation ('/');
+        ">/</button>
+    
+    
+        <button class='simbol-button' onclick="
+          updateCalculation ('=');
+        ">=</button>
+      </p>
+    
+      <p>
+        <button class='simbol-button' onclick="
+          calculation = '';
+          document.querySelector('.display').innerHTML = `${calculation}`;
+    
+          localStorage.setItem('calculation', calculation);
+        ">Clear</button>
+      </p>
+    </div>
+  </div>
+  
+  <script src="10-Exer-script.js"></script>
+</body>
+</html>

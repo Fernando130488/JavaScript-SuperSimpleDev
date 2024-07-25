@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toss coin game</title>
+</head>
+    <body>
+        <button onclick="
+            guess = 'head';
+            playGame(guess); 
+        ">HEAD</button>
+
+        <button onclick="
+            guess = 'tail';
+            playGame(guess);
+        ">TAIL</button>
+
+        <button onclick="
+            score.win = 0;
+            score.lose = 0;
+            localStorage.setItem('score', JSON.stringify(score));
+        ">Reset Score</button>
+
+        <script>
+            let guess = '';
+
+            let score = JSON.parse(localStorage.getItem('score')) || {
+                win: 0,
+                lose: 0
+            };
+
+            function playGame (guess) {
+                const randomNumber = Math.random();
+                const result = randomNumber < 0.5 ? 'head' : 'tail';
+
+                result === guess ? score.win++ : score.lose++;
+
+                localStorage.setItem('score', JSON.stringify(score));
+      
+                console.log(score);
+            }
+        </script>
+    </body>
+</html>

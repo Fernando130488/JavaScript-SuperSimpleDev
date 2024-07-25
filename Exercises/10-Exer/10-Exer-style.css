@@ -1,0 +1,179 @@
+
+
+/*10a****************************************************************************/
+.amazon-Button {
+  width: 190px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: rgb(255, 216, 20);
+  border: none;
+  border-radius: 60px;
+  cursor: pointer;
+}
+
+
+/*10b****************************************************************************/
+.uber-Request-Button {
+  width: 160px;
+  height: 50px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.uber-Schedule-Button {
+  width: 160px;
+  height: 50px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: rgb(230, 230, 230);
+  color: black;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+/*10de***************************************************************************/
+.gaming-Button{
+  width: 100px;
+  height: 50px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: rgb(230, 230, 230);
+  color: black;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.music-Button{
+  width: 100px;
+  height: 50px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: rgb(230, 230, 230);
+  color: black;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.tech-Button{
+  width: 100px;
+  height: 50px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: rgb(230, 230, 230);
+  color: black;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.is-Toggled {
+  width: 100px;
+  height: 50px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+/*10h****************************************************************************/
+
+.title_Shipping {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+.error {
+  display: none;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: red;
+}
+
+.cost-input {
+  font-size: 15px; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding: 10px;
+}
+
+.calculate-button {
+  background-color: green;
+  color: white;
+  border: none;
+  font-size: 15px;
+  padding: 12px 15px;
+  cursor: pointer;
+}
+
+/*10i****************************************************************************/
+
+.calculator {
+  background-color: black;
+  display: block;
+  width: 305px;
+  padding: 10px;
+}
+
+.display {
+  display: flex;
+  width: 300px;
+  height: 73px;
+  font-family: Arial, sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  color: whitesmoke;
+  justify-content: end;
+  align-items: center;
+  padding-right: 5px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+}
+.number-button {
+  width: 73px;
+  height: 73px;
+  background-color: rgb(51, 51, 51);
+  color: whitesmoke;
+  border: none;
+  border-radius: 73px;
+  font-size:  25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.simbol-button {
+  width: 73px;
+  height: 73px;
+  background-color: rgb(254, 160, 10);
+  color: whitesmoke;
+  border: none;
+  border-radius: 73px;
+  font-size:  25px;
+  font-weight: bold;
+  cursor: pointer;
+}
