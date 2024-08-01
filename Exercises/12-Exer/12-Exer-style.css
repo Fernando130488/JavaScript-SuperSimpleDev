@@ -1,0 +1,22 @@
+/*12cd****************************************************************************/
+
+.change-Button {
+  width: 200px;
+  height: 50px;
+  font-size: xx-large;
+}
+
+
+/*12ef****************************************************************************/
+
+.cart-Button {
+  width: 200px;
+  height: 50px;
+  font-size: xx-large;
+}
+
+.add-Mensage{
+  margin: 5px;
+  font-weight: bold;
+  font-size: xx-large;
+}
